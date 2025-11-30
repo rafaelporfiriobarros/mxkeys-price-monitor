@@ -1,0 +1,25 @@
+[2025-11-27T18:29:06.779+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-27T18:29:05.233884+00:00 [queued]>
+[2025-11-27T18:29:06.790+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-27T18:29:05.233884+00:00 [queued]>
+[2025-11-27T18:29:06.791+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 3
+[2025-11-27T18:29:06.815+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): run_scraper> on 2025-11-27 18:29:05.233884+00:00
+[2025-11-27T18:29:06.823+0000] {standard_task_runner.py:57} INFO - Started process 241 to run task
+[2025-11-27T18:29:06.826+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'mxkeys_price_monitor', 'run_scraper', 'manual__2025-11-27T18:29:05.233884+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/mxkeys_price_dag.py', '--cfg-path', '/tmp/tmpz4lg4a3o']
+[2025-11-27T18:29:06.830+0000] {standard_task_runner.py:85} INFO - Job 4: Subtask run_scraper
+[2025-11-27T18:29:06.909+0000] {task_command.py:415} INFO - Running <TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-27T18:29:05.233884+00:00 [running]> on host fa348741b943
+[2025-11-27T18:29:07.046+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='rafael' AIRFLOW_CTX_DAG_ID='mxkeys_price_monitor' AIRFLOW_CTX_TASK_ID='run_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-11-27T18:29:05.233884+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-27T18:29:05.233884+00:00'
+[2025-11-27T18:29:07.049+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-11-27T18:29:07.049+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cd /opt && python -m scraper.main']
+[2025-11-27T18:29:07.066+0000] {subprocess.py:86} INFO - Output:
+[2025-11-27T18:29:23.486+0000] {subprocess.py:93} INFO - Coletando amazon -> https://www.amazon.com.br/Logitech-Inteligente-Easy-Switch-dispositivos-Recarreg%C3%A1vel/dp/B09LYZP1LG/ref=sr_1_2_sspa?dib=eyJ2IjoiMSJ9.qAv9Nt1hy_T06DHe7RDrRr0qSFpdgID11gqOlzil9_QCR0G_KavyYoh3VzqKgbcUb0BLuIziuqbjdrKm-KpjAwPLONUB624veUt2iSS7wWeIfgYgASwavVcWEc0SUeJY5lSWVeYWANzYLlw7fXMV2x3TxOkUu-bXaqy5uRRjC8txFj7wrvT1jm9FGwEW4EsINWlEh2oAcFjdp9H1UJQNrJw8XQSoDk_FGlA26nE1deUPUGFg7_79lK3jPgui3oGcCI3CkA2Cn-1ap0Ls1rxc_CqYUcX-87SPku7SaJ-j_F8.GYwRk8Ecu4WHEZL3HU9kwFNRCyDPuhXJUPJ-N4q_M78&dib_tag=se&keywords=mx%2Bkeys&qid=1764247189&sr=8-2-spons&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
+[2025-11-27T18:29:23.487+0000] {subprocess.py:93} INFO - Coletando mercadolivre -> https://www.mercadolivre.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty-ingls-uk-cor-grafite-com-luz-branco/p/MLB18931565#polycard_client=search-nordic&search_layout=grid&position=4&type=product&tracking_id=cc68bf9e-3bed-443f-a340-68492d0e925a&wid=MLB5922924006&sid=search
+[2025-11-27T18:29:23.487+0000] {subprocess.py:93} INFO - Erro ao buscar https://www.mercadolivre.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty-ingls-uk-cor-grafite-com-luz-branco/p/MLB18931565#polycard_client=search-nordic&search_layout=grid&position=4&type=product&tracking_id=cc68bf9e-3bed-443f-a340-68492d0e925a&wid=MLB5922924006&sid=search: 403 Client Error: Forbidden for url: https://www.mercadolivre.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty-ingls-uk-cor-grafite-com-luz-branco/p/MLB18931565#polycard_client=search-nordic&search_layout=grid&position=4&type=product&tracking_id=cc68bf9e-3bed-443f-a340-68492d0e925a&wid=MLB5922924006&sid=search
+[2025-11-27T18:29:23.488+0000] {subprocess.py:93} INFO - Coletando magalu -> https://www.magazineluiza.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty/p/kkf0k96c15/in/tcld/?seller_id=armazemtb
+[2025-11-27T18:29:23.488+0000] {subprocess.py:93} INFO - Coletando kabum -> https://www.kabum.com.br/produto/366615/teclado-logitech-mx-keys-mini-cinza-padrao-us-920-010506
+[2025-11-27T18:29:23.488+0000] {subprocess.py:93} INFO - amazon 682.0
+[2025-11-27T18:29:23.488+0000] {subprocess.py:93} INFO - mercadolivre None
+[2025-11-27T18:29:23.489+0000] {subprocess.py:93} INFO - magalu 859.0
+[2025-11-27T18:29:23.489+0000] {subprocess.py:93} INFO - kabum 750.03
+[2025-11-27T18:29:23.531+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-11-27T18:29:23.579+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=mxkeys_price_monitor, task_id=run_scraper, execution_date=20251127T182905, start_date=20251127T182906, end_date=20251127T182923
+[2025-11-27T18:29:23.622+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-11-27T18:29:23.664+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,40 @@
+[2025-11-27T21:21:16.278+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-27T21:16:08.928677+00:00 [queued]>
+[2025-11-27T21:21:16.300+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-27T21:16:08.928677+00:00 [queued]>
+[2025-11-27T21:21:16.300+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 3
+[2025-11-27T21:21:16.332+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): run_scraper> on 2025-11-27 21:16:08.928677+00:00
+[2025-11-27T21:21:16.342+0000] {standard_task_runner.py:57} INFO - Started process 198 to run task
+[2025-11-27T21:21:16.347+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'mxkeys_price_monitor', 'run_scraper', 'manual__2025-11-27T21:16:08.928677+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/mxkeys_price_dag.py', '--cfg-path', '/tmp/tmpzga6sbej']
+[2025-11-27T21:21:16.350+0000] {standard_task_runner.py:85} INFO - Job 15: Subtask run_scraper
+[2025-11-27T21:21:16.427+0000] {task_command.py:415} INFO - Running <TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-27T21:16:08.928677+00:00 [running]> on host 8ab43f6a39c7
+[2025-11-27T21:21:16.564+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='rafael' AIRFLOW_CTX_DAG_ID='mxkeys_price_monitor' AIRFLOW_CTX_TASK_ID='run_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-11-27T21:16:08.928677+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-27T21:16:08.928677+00:00'
+[2025-11-27T21:21:16.566+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-11-27T21:21:16.566+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cd /opt && python -m scraper.main']
+[2025-11-27T21:21:16.580+0000] {subprocess.py:86} INFO - Output:
+[2025-11-27T21:21:32.800+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-11-27T21:21:32.801+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[2025-11-27T21:21:32.801+0000] {subprocess.py:93} INFO -     return _run_code(code, main_globals, None,
+[2025-11-27T21:21:32.801+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.8/runpy.py", line 87, in _run_code
+[2025-11-27T21:21:32.802+0000] {subprocess.py:93} INFO -     exec(code, run_globals)
+[2025-11-27T21:21:32.803+0000] {subprocess.py:93} INFO -   File "/opt/scraper/main.py", line 80, in <module>
+[2025-11-27T21:21:32.803+0000] {subprocess.py:93} INFO -     main()
+[2025-11-27T21:21:32.803+0000] {subprocess.py:93} INFO -   File "/opt/scraper/main.py", line 50, in main
+[2025-11-27T21:21:32.804+0000] {subprocess.py:93} INFO -     conn = psycopg2.connect(host=host, port=port, dbname=dbname, user=user, password=password)
+[2025-11-27T21:21:32.804+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+[2025-11-27T21:21:32.805+0000] {subprocess.py:93} INFO -     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+[2025-11-27T21:21:32.805+0000] {subprocess.py:93} INFO - psycopg2.OperationalError: connection to server at "postgres" (172.19.0.2), port 5432 failed: fe_sendauth: no password supplied
+[2025-11-27T21:21:32.805+0000] {subprocess.py:93} INFO - 
+[2025-11-27T21:21:32.806+0000] {subprocess.py:93} INFO - Coletando amazon -> https://www.amazon.com.br/Logitech-Inteligente-Easy-Switch-dispositivos-Recarreg%C3%A1vel/dp/B09LYZP1LG
+[2025-11-27T21:21:32.806+0000] {subprocess.py:93} INFO - Coletando mercadolivre -> https://www.mercadolivre.com.br/MLB-18931565
+[2025-11-27T21:21:32.806+0000] {subprocess.py:93} INFO - Erro ao buscar https://www.mercadolivre.com.br/MLB-18931565: 403 Client Error: Forbidden for url: https://www.mercadolivre.com.br/MLB-18931565
+[2025-11-27T21:21:32.807+0000] {subprocess.py:93} INFO - Coletando magalu -> https://www.magazineluiza.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty/p/kkf0k96c15
+[2025-11-27T21:21:32.807+0000] {subprocess.py:93} INFO - Coletando kabum -> https://www.kabum.com.br/produto/366615/teclado-logitech-mx-keys-mini-cinza-padrao-us-920-010506
+[2025-11-27T21:21:32.850+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-11-27T21:21:32.876+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-11-27T21:21:32.881+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=mxkeys_price_monitor, task_id=run_scraper, execution_date=20251127T211608, start_date=20251127T212116, end_date=20251127T212132
+[2025-11-27T21:21:32.908+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 15 for task run_scraper (Bash command failed. The command returned a non-zero exit code 1.; 198)
+[2025-11-27T21:21:32.923+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-11-27T21:21:32.954+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

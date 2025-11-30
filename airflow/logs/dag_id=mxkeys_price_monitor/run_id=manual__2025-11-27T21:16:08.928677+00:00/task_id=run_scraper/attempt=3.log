@@ -1,0 +1,49 @@
+[2025-11-27T21:26:36.329+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-27T21:16:08.928677+00:00 [queued]>
+[2025-11-27T21:26:36.345+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-27T21:16:08.928677+00:00 [queued]>
+[2025-11-27T21:26:36.345+0000] {taskinstance.py:1359} INFO - Starting attempt 3 of 3
+[2025-11-27T21:26:36.363+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): run_scraper> on 2025-11-27 21:16:08.928677+00:00
+[2025-11-27T21:26:36.371+0000] {standard_task_runner.py:57} INFO - Started process 175 to run task
+[2025-11-27T21:26:36.377+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'mxkeys_price_monitor', 'run_scraper', 'manual__2025-11-27T21:16:08.928677+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/mxkeys_price_dag.py', '--cfg-path', '/tmp/tmpi7yb2ukt']
+[2025-11-27T21:26:36.381+0000] {standard_task_runner.py:85} INFO - Job 18: Subtask run_scraper
+[2025-11-27T21:26:36.522+0000] {task_command.py:415} INFO - Running <TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-27T21:16:08.928677+00:00 [running]> on host b8786d04d5a7
+[2025-11-27T21:26:36.667+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='rafael' AIRFLOW_CTX_DAG_ID='mxkeys_price_monitor' AIRFLOW_CTX_TASK_ID='run_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-11-27T21:16:08.928677+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-27T21:16:08.928677+00:00'
+[2025-11-27T21:26:36.668+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-11-27T21:26:36.669+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cd /opt && python -m scraper.main']
+[2025-11-27T21:26:36.687+0000] {subprocess.py:86} INFO - Output:
+[2025-11-27T21:26:51.937+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-11-27T21:26:51.938+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[2025-11-27T21:26:51.939+0000] {subprocess.py:93} INFO -     return _run_code(code, main_globals, None,
+[2025-11-27T21:26:51.941+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.8/runpy.py", line 87, in _run_code
+[2025-11-27T21:26:51.941+0000] {subprocess.py:93} INFO -     exec(code, run_globals)
+[2025-11-27T21:26:51.942+0000] {subprocess.py:93} INFO -   File "/opt/scraper/main.py", line 80, in <module>
+[2025-11-27T21:26:51.942+0000] {subprocess.py:93} INFO -     main()
+[2025-11-27T21:26:51.943+0000] {subprocess.py:93} INFO -   File "/opt/scraper/main.py", line 64, in main
+[2025-11-27T21:26:51.943+0000] {subprocess.py:93} INFO -     save_price_db(conn, produto, site, url, price)
+[2025-11-27T21:26:51.944+0000] {subprocess.py:93} INFO -   File "/opt/scraper/main.py", line 15, in save_price_db
+[2025-11-27T21:26:51.944+0000] {subprocess.py:93} INFO -     cur.execute("""
+[2025-11-27T21:26:51.945+0000] {subprocess.py:93} INFO - psycopg2.errors.UndefinedTable: relation "precos" does not exist
+[2025-11-27T21:26:51.945+0000] {subprocess.py:93} INFO - LINE 2:         INSERT INTO precos (produto, site, url, preco, data_...
+[2025-11-27T21:26:51.945+0000] {subprocess.py:93} INFO -                             ^
+[2025-11-27T21:26:51.945+0000] {subprocess.py:93} INFO - 
+[2025-11-27T21:26:51.946+0000] {subprocess.py:93} INFO - Coletando amazon -> https://www.amazon.com.br/Logitech-Inteligente-Easy-Switch-dispositivos-Recarreg%C3%A1vel/dp/B09LYZP1LG
+[2025-11-27T21:26:51.946+0000] {subprocess.py:93} INFO - Coletando mercadolivre -> https://www.mercadolivre.com.br/MLB-18931565
+[2025-11-27T21:26:51.946+0000] {subprocess.py:93} INFO - Erro ao buscar https://www.mercadolivre.com.br/MLB-18931565: 403 Client Error: Forbidden for url: https://www.mercadolivre.com.br/MLB-18931565
+[2025-11-27T21:26:51.947+0000] {subprocess.py:93} INFO - Coletando magalu -> https://www.magazineluiza.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty/p/kkf0k96c15
+[2025-11-27T21:26:51.947+0000] {subprocess.py:93} INFO - Coletando kabum -> https://www.kabum.com.br/produto/366615/teclado-logitech-mx-keys-mini-cinza-padrao-us-920-010506
+[2025-11-27T21:26:51.947+0000] {subprocess.py:93} INFO - amazon None
+[2025-11-27T21:26:51.948+0000] {subprocess.py:93} INFO - Aviso: preço não encontrado para amazon (https://www.amazon.com.br/Logitech-Inteligente-Easy-Switch-dispositivos-Recarreg%C3%A1vel/dp/B09LYZP1LG) — pulando inserção.
+[2025-11-27T21:26:51.948+0000] {subprocess.py:93} INFO - mercadolivre None
+[2025-11-27T21:26:51.948+0000] {subprocess.py:93} INFO - Aviso: preço não encontrado para mercadolivre (https://www.mercadolivre.com.br/MLB-18931565) — pulando inserção.
+[2025-11-27T21:26:51.949+0000] {subprocess.py:93} INFO - magalu None
+[2025-11-27T21:26:51.949+0000] {subprocess.py:93} INFO - Aviso: preço não encontrado para magalu (https://www.magazineluiza.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty/p/kkf0k96c15) — pulando inserção.
+[2025-11-27T21:26:51.949+0000] {subprocess.py:93} INFO - kabum 750.03
+[2025-11-27T21:26:52.028+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-11-27T21:26:52.082+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-11-27T21:26:52.102+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=mxkeys_price_monitor, task_id=run_scraper, execution_date=20251127T211608, start_date=20251127T212636, end_date=20251127T212652
+[2025-11-27T21:26:52.164+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 18 for task run_scraper (Bash command failed. The command returned a non-zero exit code 1.; 175)
+[2025-11-27T21:26:52.206+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-11-27T21:26:52.259+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

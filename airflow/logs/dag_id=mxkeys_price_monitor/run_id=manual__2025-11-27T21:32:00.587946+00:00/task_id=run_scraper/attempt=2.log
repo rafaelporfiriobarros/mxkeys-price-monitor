@@ -1,0 +1,28 @@
+[2025-11-27T21:37:20.709+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-27T21:32:00.587946+00:00 [queued]>
+[2025-11-27T21:37:20.723+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-27T21:32:00.587946+00:00 [queued]>
+[2025-11-27T21:37:20.724+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 3
+[2025-11-27T21:37:20.743+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): run_scraper> on 2025-11-27 21:32:00.587946+00:00
+[2025-11-27T21:37:20.750+0000] {standard_task_runner.py:57} INFO - Started process 180 to run task
+[2025-11-27T21:37:20.753+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'mxkeys_price_monitor', 'run_scraper', 'manual__2025-11-27T21:32:00.587946+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/mxkeys_price_dag.py', '--cfg-path', '/tmp/tmpv_elplg9']
+[2025-11-27T21:37:20.756+0000] {standard_task_runner.py:85} INFO - Job 24: Subtask run_scraper
+[2025-11-27T21:37:20.843+0000] {task_command.py:415} INFO - Running <TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-27T21:32:00.587946+00:00 [running]> on host e0c5b04acfe9
+[2025-11-27T21:37:20.978+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='rafael' AIRFLOW_CTX_DAG_ID='mxkeys_price_monitor' AIRFLOW_CTX_TASK_ID='run_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-11-27T21:32:00.587946+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-27T21:32:00.587946+00:00'
+[2025-11-27T21:37:20.980+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-11-27T21:37:20.981+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cd /opt && python -m scraper.main']
+[2025-11-27T21:37:20.996+0000] {subprocess.py:86} INFO - Output:
+[2025-11-27T21:37:35.333+0000] {subprocess.py:93} INFO - Coletando amazon -> https://www.amazon.com.br/Logitech-Inteligente-Easy-Switch-dispositivos-Recarreg%C3%A1vel/dp/B09LYZP1LG
+[2025-11-27T21:37:35.334+0000] {subprocess.py:93} INFO - Coletando mercadolivre -> https://www.mercadolivre.com.br/MLB-18931565
+[2025-11-27T21:37:35.334+0000] {subprocess.py:93} INFO - Erro ao buscar https://www.mercadolivre.com.br/MLB-18931565: 403 Client Error: Forbidden for url: https://www.mercadolivre.com.br/MLB-18931565
+[2025-11-27T21:37:35.335+0000] {subprocess.py:93} INFO - Coletando magalu -> https://www.magazineluiza.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty/p/kkf0k96c15
+[2025-11-27T21:37:35.335+0000] {subprocess.py:93} INFO - Coletando kabum -> https://www.kabum.com.br/produto/366615/teclado-logitech-mx-keys-mini-cinza-padrao-us-920-010506
+[2025-11-27T21:37:35.336+0000] {subprocess.py:93} INFO - amazon None
+[2025-11-27T21:37:35.336+0000] {subprocess.py:93} INFO - Aviso: preço não encontrado para amazon (https://www.amazon.com.br/Logitech-Inteligente-Easy-Switch-dispositivos-Recarreg%C3%A1vel/dp/B09LYZP1LG) — pulando inserção.
+[2025-11-27T21:37:35.337+0000] {subprocess.py:93} INFO - mercadolivre None
+[2025-11-27T21:37:35.337+0000] {subprocess.py:93} INFO - Aviso: preço não encontrado para mercadolivre (https://www.mercadolivre.com.br/MLB-18931565) — pulando inserção.
+[2025-11-27T21:37:35.337+0000] {subprocess.py:93} INFO - magalu None
+[2025-11-27T21:37:35.338+0000] {subprocess.py:93} INFO - Aviso: preço não encontrado para magalu (https://www.magazineluiza.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty/p/kkf0k96c15) — pulando inserção.
+[2025-11-27T21:37:35.338+0000] {subprocess.py:93} INFO - kabum 750.03
+[2025-11-27T21:37:35.388+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-11-27T21:37:35.441+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=mxkeys_price_monitor, task_id=run_scraper, execution_date=20251127T213200, start_date=20251127T213720, end_date=20251127T213735
+[2025-11-27T21:37:35.501+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-11-27T21:37:35.549+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

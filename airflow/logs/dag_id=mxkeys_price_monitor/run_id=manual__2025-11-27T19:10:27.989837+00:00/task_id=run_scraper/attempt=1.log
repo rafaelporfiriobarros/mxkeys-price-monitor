@@ -1,0 +1,37 @@
+[2025-11-27T19:10:32.527+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-27T19:10:27.989837+00:00 [queued]>
+[2025-11-27T19:10:32.544+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-27T19:10:27.989837+00:00 [queued]>
+[2025-11-27T19:10:32.544+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 3
+[2025-11-27T19:10:32.574+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): run_scraper> on 2025-11-27 19:10:27.989837+00:00
+[2025-11-27T19:10:32.585+0000] {standard_task_runner.py:57} INFO - Started process 186 to run task
+[2025-11-27T19:10:32.594+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'mxkeys_price_monitor', 'run_scraper', 'manual__2025-11-27T19:10:27.989837+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/mxkeys_price_dag.py', '--cfg-path', '/tmp/tmpq6jmx841']
+[2025-11-27T19:10:32.599+0000] {standard_task_runner.py:85} INFO - Job 2: Subtask run_scraper
+[2025-11-27T19:10:32.713+0000] {task_command.py:415} INFO - Running <TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-27T19:10:27.989837+00:00 [running]> on host 6b785c82e377
+[2025-11-27T19:10:32.875+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='rafael' AIRFLOW_CTX_DAG_ID='mxkeys_price_monitor' AIRFLOW_CTX_TASK_ID='run_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-11-27T19:10:27.989837+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-27T19:10:27.989837+00:00'
+[2025-11-27T19:10:32.877+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-11-27T19:10:32.878+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cd /opt && python -m scraper.main']
+[2025-11-27T19:10:32.901+0000] {subprocess.py:86} INFO - Output:
+[2025-11-27T19:10:52.565+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-11-27T19:10:52.566+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[2025-11-27T19:10:52.566+0000] {subprocess.py:93} INFO -     return _run_code(code, main_globals, None,
+[2025-11-27T19:10:52.567+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.8/runpy.py", line 87, in _run_code
+[2025-11-27T19:10:52.567+0000] {subprocess.py:93} INFO -     exec(code, run_globals)
+[2025-11-27T19:10:52.567+0000] {subprocess.py:93} INFO -   File "/opt/scraper/main.py", line 67, in <module>
+[2025-11-27T19:10:52.568+0000] {subprocess.py:93} INFO -     main()
+[2025-11-27T19:10:52.568+0000] {subprocess.py:93} INFO -   File "/opt/scraper/main.py", line 42, in main
+[2025-11-27T19:10:52.568+0000] {subprocess.py:93} INFO -     host=os.getenv("DB_HOST"),
+[2025-11-27T19:10:52.568+0000] {subprocess.py:93} INFO - NameError: name 'os' is not defined
+[2025-11-27T19:10:52.569+0000] {subprocess.py:93} INFO - Coletando amazon -> https://www.amazon.com.br/Logitech-Inteligente-Easy-Switch-dispositivos-Recarreg%C3%A1vel/dp/B09LYZP1LG/ref=sr_1_2_sspa?dib=eyJ2IjoiMSJ9.qAv9Nt1hy_T06DHe7RDrRr0qSFpdgID11gqOlzil9_QCR0G_KavyYoh3VzqKgbcUb0BLuIziuqbjdrKm-KpjAwPLONUB624veUt2iSS7wWeIfgYgASwavVcWEc0SUeJY5lSWVeYWANzYLlw7fXMV2x3TxOkUu-bXaqy5uRRjC8txFj7wrvT1jm9FGwEW4EsINWlEh2oAcFjdp9H1UJQNrJw8XQSoDk_FGlA26nE1deUPUGFg7_79lK3jPgui3oGcCI3CkA2Cn-1ap0Ls1rxc_CqYUcX-87SPku7SaJ-j_F8.GYwRk8Ecu4WHEZL3HU9kwFNRCyDPuhXJUPJ-N4q_M78&dib_tag=se&keywords=mx%2Bkeys&qid=1764247189&sr=8-2-spons&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
+[2025-11-27T19:10:52.569+0000] {subprocess.py:93} INFO - Coletando mercadolivre -> https://www.mercadolivre.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty-ingls-uk-cor-grafite-com-luz-branco/p/MLB18931565#polycard_client=search-nordic&search_layout=grid&position=4&type=product&tracking_id=cc68bf9e-3bed-443f-a340-68492d0e925a&wid=MLB5922924006&sid=search
+[2025-11-27T19:10:52.569+0000] {subprocess.py:93} INFO - Erro ao buscar https://www.mercadolivre.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty-ingls-uk-cor-grafite-com-luz-branco/p/MLB18931565#polycard_client=search-nordic&search_layout=grid&position=4&type=product&tracking_id=cc68bf9e-3bed-443f-a340-68492d0e925a&wid=MLB5922924006&sid=search: 403 Client Error: Forbidden for url: https://www.mercadolivre.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty-ingls-uk-cor-grafite-com-luz-branco/p/MLB18931565#polycard_client=search-nordic&search_layout=grid&position=4&type=product&tracking_id=cc68bf9e-3bed-443f-a340-68492d0e925a&wid=MLB5922924006&sid=search
+[2025-11-27T19:10:52.570+0000] {subprocess.py:93} INFO - Coletando magalu -> https://www.magazineluiza.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty/p/kkf0k96c15/in/tcld/?seller_id=armazemtb
+[2025-11-27T19:10:52.570+0000] {subprocess.py:93} INFO - Coletando kabum -> https://www.kabum.com.br/produto/366615/teclado-logitech-mx-keys-mini-cinza-padrao-us-920-010506
+[2025-11-27T19:10:52.609+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-11-27T19:10:52.631+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-11-27T19:10:52.639+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=mxkeys_price_monitor, task_id=run_scraper, execution_date=20251127T191027, start_date=20251127T191032, end_date=20251127T191052
+[2025-11-27T19:10:52.670+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 2 for task run_scraper (Bash command failed. The command returned a non-zero exit code 1.; 186)
+[2025-11-27T19:10:52.698+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-11-27T19:10:52.748+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

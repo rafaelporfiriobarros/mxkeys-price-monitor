@@ -1,0 +1,63 @@
+[2025-11-30T03:06:40.166+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-30T03:06:38.472612+00:00 [queued]>
+[2025-11-30T03:06:40.178+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-30T03:06:38.472612+00:00 [queued]>
+[2025-11-30T03:06:40.179+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 3
+[2025-11-30T03:06:40.200+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): run_scraper> on 2025-11-30 03:06:38.472612+00:00
+[2025-11-30T03:06:40.206+0000] {standard_task_runner.py:57} INFO - Started process 344 to run task
+[2025-11-30T03:06:40.211+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'mxkeys_price_monitor', 'run_scraper', 'manual__2025-11-30T03:06:38.472612+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/mxkeys_price_dag.py', '--cfg-path', '/tmp/tmpjavbf8yh']
+[2025-11-30T03:06:40.214+0000] {standard_task_runner.py:85} INFO - Job 5: Subtask run_scraper
+[2025-11-30T03:06:40.295+0000] {task_command.py:415} INFO - Running <TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-11-30T03:06:38.472612+00:00 [running]> on host fa0bb6e60ec6
+[2025-11-30T03:06:40.436+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='rafael' AIRFLOW_CTX_DAG_ID='mxkeys_price_monitor' AIRFLOW_CTX_TASK_ID='run_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-11-30T03:06:38.472612+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-30T03:06:38.472612+00:00'
+[2025-11-30T03:06:40.437+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-11-30T03:06:40.438+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cd /opt && python -m scraper.main']
+[2025-11-30T03:06:40.452+0000] {subprocess.py:86} INFO - Output:
+[2025-11-30T03:07:11.624+0000] {subprocess.py:93} INFO - 
+[2025-11-30T03:07:11.625+0000] {subprocess.py:93} INFO - ➡️ Coletando amazon: https://www.amazon.com.br/dp/B09LYZP1LG
+[2025-11-30T03:07:11.625+0000] {subprocess.py:93} INFO - 
+[2025-11-30T03:07:11.625+0000] {subprocess.py:93} INFO - 🔎 Buscando preço de amazon
+[2025-11-30T03:07:11.626+0000] {subprocess.py:93} INFO - ⚠ AMAZON SEM PREÇO — salvando HTML para debug…
+[2025-11-30T03:07:11.626+0000] {subprocess.py:93} INFO - ❌ ERRO no scraping de amazon: [Errno 13] Permission denied: 'amazon_debug.html'
+[2025-11-30T03:07:11.626+0000] {subprocess.py:93} INFO - 
+[2025-11-30T03:07:11.626+0000] {subprocess.py:93} INFO - ➡️ Coletando mercadolivre: https://encurtador.com.br/Wiwd
+[2025-11-30T03:07:11.627+0000] {subprocess.py:93} INFO - 
+[2025-11-30T03:07:11.627+0000] {subprocess.py:93} INFO - 🔎 Buscando preço de mercadolivre
+[2025-11-30T03:07:11.627+0000] {subprocess.py:93} INFO - ⚠ Falhou API - tentando HTML
+[2025-11-30T03:07:11.627+0000] {subprocess.py:93} INFO - 
+[2025-11-30T03:07:11.627+0000] {subprocess.py:93} INFO - ➡️ Coletando magalu: https://www.magazineluiza.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty/p/kkf0k96c15
+[2025-11-30T03:07:11.628+0000] {subprocess.py:93} INFO - 
+[2025-11-30T03:07:11.628+0000] {subprocess.py:93} INFO - 🔎 Buscando preço de magalu
+[2025-11-30T03:07:11.628+0000] {subprocess.py:93} INFO - Erro ao buscar https://www.magazineluiza.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty/p/kkf0k96c15: 404 Client Error: Not Found for url: https://www.magazineluiza.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty/p/kkf0k96c15/
+[2025-11-30T03:07:11.628+0000] {subprocess.py:93} INFO - ❌ ERRO no scraping de magalu: expected string or bytes-like object
+[2025-11-30T03:07:11.630+0000] {subprocess.py:93} INFO - 
+[2025-11-30T03:07:11.630+0000] {subprocess.py:93} INFO - ➡️ Coletando kabum: https://www.kabum.com.br/produto/366615/teclado-logitech-mx-keys-mini-cinza-padrao-us-920-010506
+[2025-11-30T03:07:11.630+0000] {subprocess.py:93} INFO - 
+[2025-11-30T03:07:11.631+0000] {subprocess.py:93} INFO - 🔎 Buscando preço de kabum
+[2025-11-30T03:07:11.631+0000] {subprocess.py:93} INFO - 
+[2025-11-30T03:07:11.631+0000] {subprocess.py:93} INFO - ➡️ Coletando iplace: https://shre.ink/qhmu
+[2025-11-30T03:07:11.631+0000] {subprocess.py:93} INFO - 
+[2025-11-30T03:07:11.631+0000] {subprocess.py:93} INFO - 🔎 Buscando preço de iplace
+[2025-11-30T03:07:11.632+0000] {subprocess.py:93} INFO - 
+[2025-11-30T03:07:11.632+0000] {subprocess.py:93} INFO - ➡️ Coletando terabyte: https://shre.ink/qhm3
+[2025-11-30T03:07:11.632+0000] {subprocess.py:93} INFO - 
+[2025-11-30T03:07:11.632+0000] {subprocess.py:93} INFO - 🔎 Buscando preço de terabyte
+[2025-11-30T03:07:11.632+0000] {subprocess.py:93} INFO - Erro ao buscar https://shre.ink/qhm3: 403 Client Error: Forbidden for url: https://www.terabyteshop.com.br/produto/28634/teclado-logitech-mx-keys-mini-sem-fio-iluminacao-smart-easy-switch-grafite-920-010505
+[2025-11-30T03:07:11.633+0000] {subprocess.py:93} INFO - 
+[2025-11-30T03:07:11.633+0000] {subprocess.py:93} INFO - ➡️ Coletando pichau: https://www.pichau.com.br/teclado-sem-fio-logitech-mx-keys-mini-iluminacao-smart-easy-switch-grafite-920-010505
+[2025-11-30T03:07:11.633+0000] {subprocess.py:93} INFO - 
+[2025-11-30T03:07:11.633+0000] {subprocess.py:93} INFO - 🔎 Buscando preço de pichau
+[2025-11-30T03:07:11.634+0000] {subprocess.py:93} INFO - Erro ao buscar https://www.pichau.com.br/teclado-sem-fio-logitech-mx-keys-mini-iluminacao-smart-easy-switch-grafite-920-010505: 403 Client Error: Forbidden for url: https://www.pichau.com.br/teclado-sem-fio-logitech-mx-keys-mini-iluminacao-smart-easy-switch-grafite-920-010505
+[2025-11-30T03:07:11.635+0000] {subprocess.py:93} INFO - amazon: None
+[2025-11-30T03:07:11.635+0000] {subprocess.py:93} INFO - Aviso: preço não encontrado para amazon — pulando.
+[2025-11-30T03:07:11.636+0000] {subprocess.py:93} INFO - mercadolivre: 682.0
+[2025-11-30T03:07:11.636+0000] {subprocess.py:93} INFO - magalu: None
+[2025-11-30T03:07:11.636+0000] {subprocess.py:93} INFO - Aviso: preço não encontrado para magalu — pulando.
+[2025-11-30T03:07:11.636+0000] {subprocess.py:93} INFO - kabum: 750.03
+[2025-11-30T03:07:11.636+0000] {subprocess.py:93} INFO - iplace: None
+[2025-11-30T03:07:11.637+0000] {subprocess.py:93} INFO - Aviso: preço não encontrado para iplace — pulando.
+[2025-11-30T03:07:11.637+0000] {subprocess.py:93} INFO - terabyte: None
+[2025-11-30T03:07:11.637+0000] {subprocess.py:93} INFO - Aviso: preço não encontrado para terabyte — pulando.
+[2025-11-30T03:07:11.637+0000] {subprocess.py:93} INFO - pichau: None
+[2025-11-30T03:07:11.638+0000] {subprocess.py:93} INFO - Aviso: preço não encontrado para pichau — pulando.
+[2025-11-30T03:07:11.666+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-11-30T03:07:11.716+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=mxkeys_price_monitor, task_id=run_scraper, execution_date=20251130T030638, start_date=20251130T030640, end_date=20251130T030711
+[2025-11-30T03:07:11.748+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-11-30T03:07:11.772+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
