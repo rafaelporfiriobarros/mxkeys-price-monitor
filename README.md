@@ -41,7 +41,7 @@ Este projeto coleta preços em diferentes sites, salva em um banco de dados Post
 
 # Configuração do .env
 
-## Crie um arquivo .env na raiz do projeto:
+Crie um arquivo .env na raiz do projeto:
 
 # Database
 DB_HOST=postgres
@@ -79,15 +79,16 @@ USER_AGENT=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, 
     
 
 # Como executar o scraper
-## Rodando diretamente com Python
+
+Rodando diretamente com Python
 
 No diretório raiz:
 
-python -m scraper.main
+- python -m scraper.main
 
 # Rodando com Docker (se configurado)
 
-docker compose up --build
+- docker compose up --build
 
 # Estrutura da Tabela no Banco
 
@@ -106,7 +107,7 @@ CREATE TABLE IF NOT EXISTS precos (
 
 ## O sistema envia alerta quando:
 
-preco <= PRICE_ALERT_THRESHOLD
+- preco <= PRICE_ALERT_THRESHOLD
 
 Exemplo de alerta enviado:
 
