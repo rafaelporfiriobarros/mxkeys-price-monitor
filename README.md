@@ -124,7 +124,7 @@ venv\Scripts\activate
 
 ## Configurando o arquivo .env
 
-- Depois de toda as instalações necessárias, você precisa criar na raiz do projeto o arquivo chamado ".env".
+- Depois de todas as instalações necessárias, você precisa criar na raiz do projeto o arquivo chamado ".env".
 
 - O arquivo .env (abreviação de environment) é um arquivo usado para armazenar variáveis de ambiente, normalmente informações sensíveis ou configurações que não devem ficar públicas no código — como:
 
@@ -156,6 +156,25 @@ TG_CHAT_ID="SEU CHAT ID"
 PRICE_ALERT_THRESHOLD=700.00
 USER_AGENT=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
 ```
+
+# Instalação do Docker
+
+- Nesse projeto vamos utilizar o Docker, se você ainda nâo conhece o Docker, veja os links abaixo de como instalar, tanto para Windows, Linux e MacOS:
+
+ - Windows:
+
+[Como instalar o Docker no Windows](https://www.youtube.com/watch?v=ZyBBv1JmnWQ)
+
+ - Linux(Ubuntu 24.04 LTS)
+
+[Como instalar o Docker no Linux(Ubuntu 24.04 LTS](https://www.youtube.com/watch?v=J4dZ2jcpiP0)
+
+- MacOS:
+
+[omo instalar o Docker no MacOS](https://www.youtube.com/watch?v=-EXlfSsP49A)
+
+
+
 
 
 
