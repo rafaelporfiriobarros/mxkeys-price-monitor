@@ -217,8 +217,95 @@ docker compose up
 
 
 ```
-http://localhost:8081/
+http://localhost:8080/
+
 ```
+
+- Rode a DAG mxkeys_price_monitor do Airflow e aguarde o status ficar verde.
+
+- Crie um Banco de Dados no Postgres - PgAdmin para visualizar os dados.
+
+# Configuração do Telegram para receber as mensagens.
+
+- Para receber mensagens no Telegram usando o seu TG_BOT_TOKEN e TG_CHAT_ID, você precisa fazer 3 passos obrigatórios:
+
+## 1. Criar o BOT e obter o TG_BOT_TOKEN
+
+- Abra o Telegram
+
+- Procure @BotFather
+
+- Envie: /start
+
+- Envie: /newbot
+
+- Escolha nome e username
+
+- O BotFather entrega algo como:
+
+```
+1234567890:AAH-suaChaveAqui-ABCDE
+```
+
+- Esse é o TG_BOT_TOKEN (OK no seu .env).
+
+## 2. Obter seu TG_CHAT_ID
+
+- Abra o seu bot no Telegram
+
+- Clique em Start (ou /start)
+
+- Acesse no navegador:
+
+```bash
+https://api.telegram.org/botSEU_TOKEN/getUpdates
+```
+- Exemplo com seu token:
+
+```ruby
+https://api.telegram.org/bot7416358916:AAEjsjpg-AXtBWNCU2-oDwMS8WUhvqvD_FE/getUpdates
+```
+
+- A resposta virá algo como:
+
+```json
+{
+  "ok": true,
+  "result": [
+    {
+      "message": {
+        "chat": {
+          "id": "SEU_ID",
+          "type": "private"
+        }
+      }
+    }
+  ]
+}
+```
+
+- O chat.id = TG_CHAT_ID
+- Você colocou no .env:
+```ini
+TG_CHAT_ID=SEU_ID
+```
+
+## 3. Conferir se o BOT pode te enviar mensagens
+
+- Você PRECISA enviar pelo menos 1 mensagem para o BOT antes.
+
+- Se você não deu /start no bot, o Telegram bloqueia o envio.
+
+- Então faça isso:
+
+ - Abra o Telegram
+
+ - Busque o nome do seu bot (ex.: "meuscraper_bot")
+
+ - Clique em Start
+
+ - Pronto: agora o bot está autorizado a te enviar mensagens.
+
 
 
 
