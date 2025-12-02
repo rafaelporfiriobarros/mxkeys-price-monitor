@@ -143,6 +143,8 @@ venv\Scripts\activate
 
 - USER_AGENT – Cabeçalho HTTP usado nas requisições. Simula um navegador real para evitar bloqueios de sites durante scraping.
 
+- Se quiser testar, coloque um valor maior em PRICE_ALERT_THRESHOLD=900.00 por exemplo, entâo rode a DAG e a mensagem vai chegar no Telegram.
+
 - O arquivo .env precisa ficar da seguinte forma:
 
 ```python
@@ -248,7 +250,7 @@ http://localhost:8080/
 
 - O BotFather entrega algo como:
 
-```
+```bash
 1234567890:AAH-suaChaveAqui-ABCDE
 ```
 
