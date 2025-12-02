@@ -215,7 +215,10 @@ docker compose up
 
 - Se tudo ocorrer bem, entre no seu navegador para acessar o localhost onde está o Airflow:
 
-[localhost](http://localhost:8081/)
+
+```
+http://localhost:8081/
+```
 
 
 
