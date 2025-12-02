@@ -45,7 +45,7 @@ Este projeto coleta preços em diferentes sites, salva em um banco de dados Post
 
 ## Pyenv
 
-- Primeiro de tudo, você deve instalar a versão mais instável do python para trabalhar com airflow no docker, que é a versão 3.11.5.
+- Primeiro de tudo, você deve instalar a versão mais estável do python para trabalhar com airflow no docker, que é a versão 3.11.5.
 - Para isso, instale o Pyenv. O Pyenv é uma ferramenta que permite instalar e gerenciar múltiplas versões do Python no mesmo sistema — ideal para projetos diferentes, ambientes isolados e compatibilidade com Airflow, Django, Data Science, etc.
 - Acesse o video a seguir da jornada de dados para instalar e conhecer melhor sobre o pyenv e ambientes virtuais:
 
