@@ -313,6 +313,77 @@ TG_CHAT_ID=SEU_ID
 
  - Pronto: agora o bot está autorizado a te enviar mensagens.
 
+ # Entendimento dos Scripts 
+
+ ## config.py
+
+ - Esse script é responsável por carregar variáveis de ambiente do arquivo .env e disponibilizá-las como configurações dentro da aplicação — principalmente dados de banco de dados, Telegram e parâmetros de scraping.
+
+## dags/sites.json
+
+- O código define um dicionário Python contendo os sites onde o scraper irá buscar o preço do teclado MX Keys.
+- Cada chave representa o nome da loja, e cada valor é uma URL encurtada com o serviço shre.ink.
+
+## scraper/parsers.py
+
+- Esse módulo contém as funções responsáveis por extrair preços das páginas HTML das lojas.
+- Ele usa BeautifulSoup para estruturar o HTML e tenta encontrar o preço usando vários seletores e fallback com regex.
+
+## scraper/scrapers.py
+
+- Este arquivo é responsável por carregar as URLs das lojas, aplicar o scraping inteligente, usar parsers específicos (Amazon, Kabum, Magalu), e utilizar a API oficial do Mercado Livre quando possível.
+
+- Ele também controla fallback, debug, header de User-Agent e leitura de sites.json.
+
+## scraper/utils.py
+
+- Esse módulo contém funções utilitárias essenciais para o scraper:
+
+  - Normalização de preços
+
+  - Download de HTML com tratamento de erros
+
+  - Criação do objeto BeautifulSoup
+
+  - Busca genérica de preços via regex
+
+  - Espera aleatória entre requisições (anti-bloqueio)
+
+## scraper/main.py
+
+- Este é o arquivo principal do scraper. Ele executa a coleta de preços em todas as lojas.
+
+- Conecta ao banco PostgreSQL.
+
+- Salva os preços coletados.
+
+- Envia alertas para o Telegram se o preço estiver abaixo do limite configurado.
+
+- É o "motor" do monitoramento.
+
+## dags/mxkeys_price_dag.py
+
+- Essa DAG orquestra a execução automática do scraper a cada 4 horas usando o Apache Airflow.
+
+- Garante até 2 tentativas extras em caso de falha.
+
+- Exporta a variável de ambiente MXKEYS_SITES_FILE para apontar o arquivo sites.json.
+
+- Executa o scraper chamando o módulo:
+
+```bash
+python -m scraper.main
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
