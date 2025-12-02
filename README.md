@@ -171,10 +171,33 @@ USER_AGENT=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, 
 
 - MacOS:
 
-[omo instalar o Docker no MacOS](https://www.youtube.com/watch?v=-EXlfSsP49A)
+[Como instalar o Docker no MacOS](https://www.youtube.com/watch?v=-EXlfSsP49A)
 
+- Depois da instalação, verifique se o Docker está rodando na sua máquina. Utilize o comando a seguir no terminal:
 
+```bash
+docker --version
+```
 
+# Instalação das Dependências
+
+- Agora você precisa instalar as dependências, as bibliotecas necessárias para rodar corretamente o projeto.
+- Na raiz do projeto existe um arquivo de texto chamado "requirements.txt".
+- No seu terminal já totalmente configurado, digite o comando a seguir:
+
+```bash
+pip install -r requirements.txt
+```
+
+- O Pip é o gerenciador de pacotes do Python. Ele serve para instalar, atualizar e remover bibliotecas. É como a “Loja de Apps” do Python.
+- O arquivo "requirements.txt" É um arquivo que lista todas as dependências necessárias para rodar um projeto Python. Ele facilita quando outra pessoa (ou você mesmo) precisa instalar tudo para rodar o projeto.
+
+# Resumo das Instalações
+
+- Instalação do Pyenv e ativação do Python 3.11.5
+- Instalação do Git e criação do projeto no Github.
+- Criação e ativação do Ambiente Virtual.
+- Instalação do Docker.
 
 
 
