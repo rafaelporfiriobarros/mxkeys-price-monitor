@@ -1,5 +1,7 @@
 # MX Keys Price Monitor
 
+![Ambiente Virtual](assets/teclado-mxkeys.png)
+
 Monitoramento automático de preços do teclado Logitech MX Keys com Web Scraping, PostgreSQL, Airflow e alertas via Telegram.
 
 Este projeto coleta preços em diferentes sites, salva em um banco de dados PostgreSQL e envia alertas para o Telegram quando o preço cai abaixo de um limite definido.
