@@ -138,6 +138,11 @@ venv\Scripts\activate
 
     - configurações específicas de ambiente (dev, teste, produção)
 
+- No projeto o arquivo .env foi criado para receber um banco de dados postgres, e também a criação de variáveis que habilitam o sistema de alertas por Telegram. 
+- PRICE_ALERT_THRESHOLD – Valor limite para disparar o alerta. Se o preço encontrado for menor ou igual a esse número envia mensagem no Telegram.
+
+- USER_AGENT – Cabeçalho HTTP usado nas requisições. Simula um navegador real para evitar bloqueios de sites durante scraping.
+
 - O arquivo .env precisa ficar da seguinte forma:
 
 ```python
