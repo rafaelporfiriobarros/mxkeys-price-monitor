@@ -59,12 +59,12 @@ pyenv local 3.11.5
 - Verifique no terminal a versão do python utilizando:
 
 ```bash
-"python3 --version" 
+python3 --version
 
 ou tente:
 
 ```bash
-"python --version" 
+python --version 
 
 dependendo do seu sistema operacional.
 
