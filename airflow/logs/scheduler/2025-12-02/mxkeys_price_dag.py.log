@@ -691,3 +691,479 @@ IndentationError: expected an indented block
 [2025-12-02T00:47:35.481+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:47:35.481+0000] {dag.py:2915} INFO - Sync 1 DAGs
 [2025-12-02T00:47:35.520+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:47:35.520+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
 [2025-12-02T00:47:35.554+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.138 seconds
+[2025-12-02T00:48:05.619+0000] {processor.py:157} INFO - Started process (PID=480) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:48:05.620+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:48:05.621+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:48:05.621+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:48:05.639+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:48:05.683+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:48:05.683+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:48:05.719+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:48:05.718+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:48:05.745+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.132 seconds
+[2025-12-02T00:48:35.927+0000] {processor.py:157} INFO - Started process (PID=488) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:48:35.929+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:48:35.931+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:48:35.930+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:48:35.947+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:48:35.984+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:48:35.984+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:48:36.020+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:48:36.020+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:48:36.046+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.124 seconds
+[2025-12-02T00:49:06.146+0000] {processor.py:157} INFO - Started process (PID=493) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:49:06.147+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:49:06.148+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:49:06.148+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:49:06.164+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:49:06.204+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:49:06.204+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:49:06.242+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:49:06.242+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:49:06.274+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.133 seconds
+[2025-12-02T00:49:36.449+0000] {processor.py:157} INFO - Started process (PID=498) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:49:36.450+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:49:36.452+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:49:36.452+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:49:36.477+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:49:36.525+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:49:36.524+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:49:36.562+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:49:36.562+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:49:36.592+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.149 seconds
+[2025-12-02T00:50:06.668+0000] {processor.py:157} INFO - Started process (PID=503) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:50:06.669+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:50:06.671+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:50:06.670+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:50:06.688+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:50:06.731+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:50:06.731+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:50:06.768+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:50:06.768+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:50:06.801+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.138 seconds
+[2025-12-02T00:50:36.975+0000] {processor.py:157} INFO - Started process (PID=508) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:50:36.978+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:50:36.982+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:50:36.980+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:50:37.010+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:50:37.084+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:50:37.084+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:50:37.159+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:50:37.158+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:50:37.212+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.244 seconds
+[2025-12-02T00:51:07.419+0000] {processor.py:157} INFO - Started process (PID=513) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:51:07.420+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:51:07.421+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:51:07.421+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:51:07.441+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:51:07.494+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:51:07.494+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:51:07.545+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:51:07.544+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:51:07.592+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.178 seconds
+[2025-12-02T00:51:37.834+0000] {processor.py:157} INFO - Started process (PID=518) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:51:37.837+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:51:37.838+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:51:37.837+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:51:37.855+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:51:37.902+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:51:37.902+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:51:37.938+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:51:37.937+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:51:37.968+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.139 seconds
+[2025-12-02T00:52:08.016+0000] {processor.py:157} INFO - Started process (PID=523) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:52:08.017+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:52:08.018+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:52:08.018+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:52:08.034+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:52:08.089+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:52:08.088+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:52:08.127+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:52:08.127+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:52:08.153+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.142 seconds
+[2025-12-02T00:52:38.347+0000] {processor.py:157} INFO - Started process (PID=528) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:52:38.349+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:52:38.350+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:52:38.350+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:52:38.366+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:52:38.405+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:52:38.405+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:52:38.458+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:52:38.457+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:52:38.498+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.155 seconds
+[2025-12-02T00:53:08.551+0000] {processor.py:157} INFO - Started process (PID=533) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:53:08.552+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:53:08.553+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:53:08.553+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:53:08.570+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:53:08.612+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:53:08.612+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:53:08.646+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:53:08.646+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:53:08.677+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.131 seconds
+[2025-12-02T00:53:38.889+0000] {processor.py:157} INFO - Started process (PID=538) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:53:38.892+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:53:38.894+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:53:38.893+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:53:38.917+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:53:38.969+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:53:38.969+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:53:39.013+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:53:39.012+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:53:39.049+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.166 seconds
+[2025-12-02T00:54:09.114+0000] {processor.py:157} INFO - Started process (PID=543) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:54:09.115+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:54:09.117+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:54:09.116+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:54:09.134+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:54:09.174+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:54:09.174+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:54:09.209+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:54:09.208+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:54:09.238+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.129 seconds
+[2025-12-02T00:54:39.471+0000] {processor.py:157} INFO - Started process (PID=548) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:54:39.474+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:54:39.475+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:54:39.475+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:54:39.493+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:54:39.533+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:54:39.533+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:54:39.574+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:54:39.574+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:54:39.602+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.137 seconds
+[2025-12-02T00:55:09.682+0000] {processor.py:157} INFO - Started process (PID=553) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:55:09.683+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:55:09.685+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:55:09.684+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:55:09.701+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:55:09.741+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:55:09.741+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:55:09.779+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:55:09.778+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:55:09.809+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.131 seconds
+[2025-12-02T00:55:39.980+0000] {processor.py:157} INFO - Started process (PID=558) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:55:39.984+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:55:39.986+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:55:39.985+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:55:40.026+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:55:40.096+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:55:40.096+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:55:40.160+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:55:40.159+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:55:40.197+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.223 seconds
+[2025-12-02T00:56:10.409+0000] {processor.py:157} INFO - Started process (PID=563) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:56:10.411+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:56:10.412+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:56:10.412+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:56:10.446+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:56:10.524+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:56:10.523+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:56:10.589+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:56:10.589+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:56:10.629+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.225 seconds
+[2025-12-02T00:56:40.864+0000] {processor.py:157} INFO - Started process (PID=568) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:56:40.865+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:56:40.867+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:56:40.866+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:56:40.886+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:56:40.930+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:56:40.930+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:56:40.974+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:56:40.974+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:56:41.005+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.147 seconds
+[2025-12-02T00:57:11.078+0000] {processor.py:157} INFO - Started process (PID=573) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:57:11.080+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:57:11.081+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:57:11.081+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:57:11.098+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:57:11.138+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:57:11.138+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:57:11.180+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:57:11.179+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:57:11.206+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.132 seconds
+[2025-12-02T00:57:41.446+0000] {processor.py:157} INFO - Started process (PID=578) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:57:41.449+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:57:41.451+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:57:41.450+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:57:41.480+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:57:41.525+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:57:41.524+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:57:41.567+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:57:41.567+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:57:41.598+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.157 seconds
+[2025-12-02T00:58:11.814+0000] {processor.py:157} INFO - Started process (PID=583) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:58:11.815+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:58:11.816+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:58:11.816+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:58:11.833+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:58:11.874+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:58:11.873+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:58:11.918+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:58:11.918+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:58:11.944+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.135 seconds
+[2025-12-02T00:58:42.011+0000] {processor.py:157} INFO - Started process (PID=588) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:58:42.013+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:58:42.014+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:58:42.014+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:58:42.031+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:58:42.073+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:58:42.073+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:58:42.110+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:58:42.110+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:58:42.142+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.136 seconds
+[2025-12-02T00:59:12.345+0000] {processor.py:157} INFO - Started process (PID=593) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:59:12.347+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:59:12.348+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:59:12.348+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:59:12.367+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:59:12.412+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:59:12.412+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:59:12.461+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:59:12.461+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:59:12.491+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.151 seconds
+[2025-12-02T00:59:42.541+0000] {processor.py:157} INFO - Started process (PID=598) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:59:42.543+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T00:59:42.545+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:59:42.544+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:59:42.575+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T00:59:42.649+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:59:42.649+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T00:59:42.720+0000] {logging_mixin.py:151} INFO - [2025-12-02T00:59:42.719+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T00:59:42.775+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.241 seconds
+[2025-12-02T01:00:12.932+0000] {processor.py:157} INFO - Started process (PID=603) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:00:12.934+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:00:12.935+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:00:12.935+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:00:12.953+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:00:12.994+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:00:12.994+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:00:13.029+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:00:13.029+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:00:13.059+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.131 seconds
+[2025-12-02T01:00:43.164+0000] {processor.py:157} INFO - Started process (PID=608) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:00:43.165+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:00:43.166+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:00:43.166+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:00:43.183+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:00:43.225+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:00:43.225+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:00:43.266+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:00:43.266+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:00:43.295+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.135 seconds
+[2025-12-02T01:01:13.472+0000] {processor.py:157} INFO - Started process (PID=613) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:01:13.475+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:01:13.476+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:01:13.475+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:01:13.497+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:01:13.545+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:01:13.545+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:01:13.580+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:01:13.580+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:01:13.606+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.139 seconds
+[2025-12-02T01:01:43.712+0000] {processor.py:157} INFO - Started process (PID=618) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:01:43.713+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:01:43.714+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:01:43.714+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:01:43.733+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:01:43.777+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:01:43.776+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:01:43.814+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:01:43.814+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:01:43.844+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.138 seconds
+[2025-12-02T01:02:14.040+0000] {processor.py:157} INFO - Started process (PID=623) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:02:14.043+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:02:14.044+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:02:14.044+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:02:14.064+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:02:14.106+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:02:14.106+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:02:14.142+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:02:14.142+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:02:14.171+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.136 seconds
+[2025-12-02T01:02:44.262+0000] {processor.py:157} INFO - Started process (PID=628) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:02:44.263+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:02:44.264+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:02:44.264+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:02:44.282+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:02:44.326+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:02:44.326+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:02:44.364+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:02:44.364+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:02:44.393+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.136 seconds
+[2025-12-02T01:03:14.535+0000] {processor.py:157} INFO - Started process (PID=633) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:03:14.538+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:03:14.540+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:03:14.539+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:03:14.554+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:03:14.594+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:03:14.593+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:03:14.634+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:03:14.634+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:03:14.662+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.131 seconds
+[2025-12-02T01:03:44.803+0000] {processor.py:157} INFO - Started process (PID=638) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:03:44.804+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:03:44.805+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:03:44.805+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:03:44.821+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:03:44.867+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:03:44.866+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:03:44.903+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:03:44.903+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:03:44.930+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.132 seconds
+[2025-12-02T01:04:15.092+0000] {processor.py:157} INFO - Started process (PID=643) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:04:15.094+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:04:15.096+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:04:15.095+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:04:15.115+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:04:15.156+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:04:15.156+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:04:15.192+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:04:15.192+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:04:15.222+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.135 seconds
+[2025-12-02T01:04:45.359+0000] {processor.py:157} INFO - Started process (PID=648) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:04:45.360+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:04:45.361+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:04:45.361+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:04:45.379+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:04:45.422+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:04:45.422+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:04:45.457+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:04:45.457+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:04:45.484+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.131 seconds
+[2025-12-02T01:05:15.641+0000] {processor.py:157} INFO - Started process (PID=653) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:05:15.643+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:05:15.646+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:05:15.645+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:05:15.679+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:05:15.761+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:05:15.761+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:05:15.830+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:05:15.830+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:05:15.866+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.232 seconds
+[2025-12-02T01:05:46.079+0000] {processor.py:157} INFO - Started process (PID=658) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:05:46.080+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:05:46.081+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:05:46.080+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:05:46.096+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:05:46.137+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:05:46.137+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:05:46.173+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:05:46.173+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:05:46.205+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.130 seconds
+[2025-12-02T01:06:16.303+0000] {processor.py:157} INFO - Started process (PID=663) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:06:16.306+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:06:16.307+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:06:16.306+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:06:16.326+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:06:16.370+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:06:16.370+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:06:16.409+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:06:16.409+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:06:16.440+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.142 seconds
+[2025-12-02T01:06:46.645+0000] {processor.py:157} INFO - Started process (PID=668) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:06:46.647+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:06:46.648+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:06:46.647+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:06:46.692+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:06:46.758+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:06:46.757+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:06:46.808+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:06:46.808+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:06:46.844+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.204 seconds
+[2025-12-02T01:07:17.062+0000] {processor.py:157} INFO - Started process (PID=673) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:07:17.065+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:07:17.066+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:07:17.066+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:07:17.086+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:07:17.130+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:07:17.130+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:07:17.167+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:07:17.166+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:07:17.198+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.142 seconds
+[2025-12-02T01:07:47.235+0000] {processor.py:157} INFO - Started process (PID=678) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:07:47.236+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:07:47.237+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:07:47.236+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:07:47.254+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:07:47.295+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:07:47.294+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:07:47.330+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:07:47.329+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:07:47.358+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.128 seconds
+[2025-12-02T01:08:17.459+0000] {processor.py:157} INFO - Started process (PID=683) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:08:17.461+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:08:17.462+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:08:17.462+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:08:17.481+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:08:17.523+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:08:17.523+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:08:17.560+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:08:17.560+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:08:17.590+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.136 seconds
+[2025-12-02T01:08:47.757+0000] {processor.py:157} INFO - Started process (PID=688) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:08:47.759+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:08:47.760+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:08:47.759+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:08:47.780+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:08:47.818+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:08:47.818+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:08:47.853+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:08:47.853+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:08:47.881+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.129 seconds
+[2025-12-02T01:09:18.023+0000] {processor.py:157} INFO - Started process (PID=693) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:09:18.025+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:09:18.026+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:09:18.026+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:09:18.045+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:09:18.086+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:09:18.086+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:09:18.122+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:09:18.121+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:09:18.151+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.134 seconds
+[2025-12-02T01:09:48.302+0000] {processor.py:157} INFO - Started process (PID=698) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:09:48.303+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:09:48.305+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:09:48.304+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:09:48.323+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:09:48.365+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:09:48.365+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:09:48.404+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:09:48.403+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:09:48.437+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.141 seconds
+[2025-12-02T01:10:18.566+0000] {processor.py:157} INFO - Started process (PID=703) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:10:18.569+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:10:18.570+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:10:18.570+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:10:18.592+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:10:18.637+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:10:18.636+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:10:18.673+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:10:18.672+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:10:18.697+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.136 seconds
+[2025-12-02T01:10:48.813+0000] {processor.py:157} INFO - Started process (PID=708) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:10:48.815+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:10:48.816+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:10:48.816+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:10:48.835+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:10:48.875+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:10:48.875+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:10:48.913+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:10:48.913+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:10:48.943+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.135 seconds
+[2025-12-02T01:11:19.121+0000] {processor.py:157} INFO - Started process (PID=713) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:11:19.124+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:11:19.125+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:11:19.125+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:11:19.145+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:11:19.188+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:11:19.188+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:11:19.230+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:11:19.229+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:11:19.260+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.146 seconds
+[2025-12-02T01:11:49.379+0000] {processor.py:157} INFO - Started process (PID=718) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:11:49.380+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:11:49.381+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:11:49.381+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:11:49.398+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:11:49.439+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:11:49.438+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:11:49.474+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:11:49.474+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:11:49.504+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.130 seconds
+[2025-12-02T01:12:19.665+0000] {processor.py:157} INFO - Started process (PID=723) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:12:19.668+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:12:19.669+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:12:19.669+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:12:19.689+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:12:19.732+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:12:19.732+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:12:19.768+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:12:19.768+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:12:19.798+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.138 seconds
+[2025-12-02T01:12:49.925+0000] {processor.py:157} INFO - Started process (PID=728) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:12:49.927+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:12:49.928+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:12:49.927+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:12:49.944+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:12:49.984+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:12:49.984+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:12:50.023+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:12:50.023+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:12:50.053+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.133 seconds
+[2025-12-02T01:13:20.188+0000] {processor.py:157} INFO - Started process (PID=733) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:13:20.190+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:13:20.192+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:13:20.191+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:13:20.210+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:13:20.273+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:13:20.273+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:13:20.308+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:13:20.308+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:13:20.333+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.151 seconds
+[2025-12-02T01:13:50.470+0000] {processor.py:157} INFO - Started process (PID=738) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:13:50.471+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:13:50.473+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:13:50.472+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:13:50.495+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:13:50.545+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:13:50.544+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:13:50.582+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:13:50.582+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:13:50.611+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.147 seconds
+[2025-12-02T01:14:20.739+0000] {processor.py:157} INFO - Started process (PID=743) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:14:20.741+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:14:20.743+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:14:20.742+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:14:20.761+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:14:20.803+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:14:20.802+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:14:20.837+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:14:20.837+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:14:20.866+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.132 seconds
+[2025-12-02T01:14:51.030+0000] {processor.py:157} INFO - Started process (PID=748) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:14:51.031+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:14:51.032+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:14:51.031+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:14:51.049+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:14:51.092+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:14:51.092+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:14:51.127+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:14:51.127+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:14:51.159+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.134 seconds
+[2025-12-02T01:15:21.274+0000] {processor.py:157} INFO - Started process (PID=753) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:15:21.277+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:15:21.278+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:15:21.278+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:15:21.295+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:15:21.338+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:15:21.338+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:15:21.373+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:15:21.373+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:15:21.404+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.135 seconds
+[2025-12-02T01:15:51.522+0000] {processor.py:157} INFO - Started process (PID=758) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:15:51.523+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:15:51.524+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:15:51.524+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:15:51.540+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:15:51.581+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:15:51.581+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:15:51.618+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:15:51.618+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:15:51.648+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.132 seconds
+[2025-12-02T01:16:21.753+0000] {processor.py:157} INFO - Started process (PID=763) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:16:21.756+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:16:21.757+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:16:21.757+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:16:21.774+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:16:21.823+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:16:21.823+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:16:21.861+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:16:21.861+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:16:21.889+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.142 seconds
+[2025-12-02T01:16:52.073+0000] {processor.py:157} INFO - Started process (PID=768) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:16:52.074+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:16:52.075+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:16:52.074+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:16:52.094+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:16:52.131+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:16:52.131+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:16:52.165+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:16:52.165+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:16:52.193+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.127 seconds
+[2025-12-02T01:17:22.322+0000] {processor.py:157} INFO - Started process (PID=773) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:17:22.325+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:17:22.326+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:17:22.326+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:17:22.344+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:17:22.386+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:17:22.386+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:17:22.423+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:17:22.423+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:17:22.460+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.144 seconds
+[2025-12-02T01:17:52.588+0000] {processor.py:157} INFO - Started process (PID=778) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:17:52.589+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:17:52.590+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:17:52.589+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:17:52.606+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:17:52.646+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:17:52.646+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:17:52.682+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:17:52.682+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:17:52.710+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.127 seconds
+[2025-12-02T01:18:22.872+0000] {processor.py:157} INFO - Started process (PID=783) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:18:22.874+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:18:22.875+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:18:22.875+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:18:22.895+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:18:22.934+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:18:22.934+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:18:22.972+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:18:22.972+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:18:23.002+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.134 seconds
+[2025-12-02T01:18:53.103+0000] {processor.py:157} INFO - Started process (PID=788) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:18:53.104+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:18:53.105+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:18:53.105+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:18:53.122+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:18:53.164+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:18:53.164+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:18:53.200+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:18:53.200+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:18:53.232+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.134 seconds
+[2025-12-02T01:19:23.438+0000] {processor.py:157} INFO - Started process (PID=793) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:19:23.440+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:19:23.441+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:19:23.441+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:19:23.459+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:19:23.499+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:19:23.499+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:19:23.533+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:19:23.533+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:19:23.561+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.128 seconds
+[2025-12-02T01:19:53.640+0000] {processor.py:157} INFO - Started process (PID=798) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:19:53.641+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:19:53.642+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:19:53.642+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:19:53.660+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:19:53.701+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:19:53.701+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:19:53.737+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:19:53.736+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:19:53.766+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.132 seconds
+[2025-12-02T01:20:23.995+0000] {processor.py:157} INFO - Started process (PID=803) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:20:23.997+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:20:23.999+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:20:23.998+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:20:24.018+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:20:24.066+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:20:24.066+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:20:24.105+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:20:24.105+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:20:24.133+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.143 seconds
+[2025-12-02T01:33:31.963+0000] {processor.py:157} INFO - Started process (PID=808) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:33:31.964+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:33:31.967+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:33:31.966+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:33:31.999+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:33:32.131+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:33:32.130+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:33:32.251+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:33:32.251+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:33:32.300+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.350 seconds
+[2025-12-02T01:34:02.494+0000] {processor.py:157} INFO - Started process (PID=815) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:34:02.495+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:34:02.497+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:34:02.496+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:34:02.516+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:34:02.569+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:34:02.569+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:34:02.615+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:34:02.615+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:34:02.648+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.159 seconds
+[2025-12-02T01:34:32.825+0000] {processor.py:157} INFO - Started process (PID=820) to work on /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:34:32.827+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/mxkeys_price_dag.py for tasks to queue
+[2025-12-02T01:34:32.828+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:34:32.828+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:34:32.848+0000] {processor.py:839} INFO - DAG(s) dict_keys(['mxkeys_price_monitor']) retrieved from /opt/airflow/dags/mxkeys_price_dag.py
+[2025-12-02T01:34:32.924+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:34:32.924+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2025-12-02T01:34:32.978+0000] {logging_mixin.py:151} INFO - [2025-12-02T01:34:32.977+0000] {dag.py:3696} INFO - Setting next_dagrun for mxkeys_price_monitor to 2025-12-02T00:00:00+00:00, run_after=2025-12-02T04:00:00+00:00
+[2025-12-02T01:34:33.013+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mxkeys_price_dag.py took 0.193 seconds

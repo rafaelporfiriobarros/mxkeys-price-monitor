@@ -19,7 +19,7 @@ Este projeto coleta preços em diferentes sites, salva em um banco de dados Post
 # Requisitos
 ## Python
 
-- Python 3.9+
+- Python 3.11.5
 
 - requests
 
@@ -38,3 +38,44 @@ Este projeto coleta preços em diferentes sites, salva em um banco de dados Post
 - Docker / Docker Compose
 
 - Apache Airflow
+
+# Como rodar o projeto 
+
+## Pyenv
+
+- Primeiro de tudo, você deve instalar a versão mais instável do python para trabalhar com airflow no docker, que é a versão 3.11.5.
+- Para isso, instale o Pyenv. O Pyenv é uma ferramenta que permite instalar e gerenciar múltiplas versões do Python no mesmo sistema — ideal para projetos diferentes, ambientes isolados e compatibilidade com Airflow, Django, Data Science, etc.
+- Acesse o video a seguir da jornada de dados para instalar e conhecer melhor sobre o pyenv e ambientes virtuais:
+
+[Jornada de Dados](https://www.youtube.com/watch?v=9LYqtLuD7z4&t=194s)
+
+- Depois de ter instalado o pyenv e baixado o python 3.11.5, entre na pasta do projeto "mxkeys-price-monitor" e ative a versão do python no terminal utilizando:
+    - pyenv local 3.11.5
+
+- Verifique no terminal a versão do python utilizando:
+    - "python3 --version" ou "python --version" dependendo do seu sistema operacional.
+
+## Ambiente virtual
+
+- Agora será preciso criar um ambiente virtual para isolar dependências, garantindo que cada projeto tenha suas próprias bibliotecas e versões — sem conflito com outros projetos ou com o Python do sistema.
+
+- Se você viu o vídeo da "Jornada de Dados" e entendeu como funciona um ambiente virtual, vamos criar um:
+    - No diretório do projeto, abra o terminal e digite: 
+    - "python -m venv .venv"
+    - Será criada uma pasta .venv com as dependências necessárias para o ambiente virtual.
+    - Em seguida, ative o ambiente:
+    - No Linux / macOS vocẽ utiliza:
+    - "source .venv/bin/activate"
+    - No Windows vocẽ utiliza:
+    - "venv\Scripts\activate"
+
+![Ambiente Virtual](assets/ambiente-virtual-ativo.png)
+
+
+
+
+
+
+
+
+
