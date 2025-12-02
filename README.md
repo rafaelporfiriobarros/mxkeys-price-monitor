@@ -57,6 +57,8 @@ Este projeto coleta preços em diferentes sites, salva em um banco de dados Post
 cd mxkeys-price-monitor
 ```
 
+- depois digite:
+
 ```bash
 pyenv local 3.11.5
 
