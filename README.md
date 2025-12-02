@@ -54,6 +54,10 @@ Este projeto coleta preços em diferentes sites, salva em um banco de dados Post
 - Depois de ter instalado o pyenv e baixado o python 3.11.5, entre na pasta do projeto "mxkeys-price-monitor" e ative a versão do python no terminal utilizando:
 
 ```bash
+cd mxkeys-price-monitor
+```
+
+```bash
 pyenv local 3.11.5
 
 ```
@@ -64,27 +68,33 @@ pyenv local 3.11.5
 python3 --version
 ```
 
-ou tente:
+- ou tente:
 
 ```bash
 python --version
 ```
 
-dependendo do seu sistema operacional.
+- dependendo do seu sistema operacional.
 
 ## Ambiente virtual
 
 - Agora será preciso criar um ambiente virtual para isolar dependências, garantindo que cada projeto tenha suas próprias bibliotecas e versões — sem conflito com outros projetos ou com o Python do sistema.
 
-- Se você viu o vídeo da "Jornada de Dados" e entendeu como funciona um ambiente virtual, vamos criar um:
-    - No diretório do projeto, abra o terminal e digite: 
-    - "python -m venv .venv"
-    - Será criada uma pasta .venv com as dependências necessárias para o ambiente virtual.
-    - Em seguida, ative o ambiente:
-    - No Linux / macOS vocẽ utiliza:
-    - "source .venv/bin/activate"
-    - No Windows vocẽ utiliza:
-    - "venv\Scripts\activate"
+- Se você viu o vídeo da "Jornada de Dados" e entendeu como funciona um ambiente virtual, vamos criar um. No diretório do projeto, abra o terminal e digite:
+
+```bash
+python -m venv .venv
+```
+
+- Será criada uma pasta .venv com as dependências necessárias para o ambiente virtual.
+- Em seguida, ative o ambiente. No Linux / macOS vocẽ utiliza:
+```bash
+source .venv/bin/activate
+```
+- No Windows vocẽ utiliza:
+```bash
+venv\Scripts\activate
+```
 
 ![Ambiente Virtual](assets/ambiente-virtual-ativo.png)
 
