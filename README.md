@@ -56,6 +56,8 @@ Este projeto coleta preços em diferentes sites, salva em um banco de dados Post
 ```bash
 pyenv local 3.11.5
 
+```
+
 - Verifique no terminal a versão do python utilizando:
 
 ```bash
