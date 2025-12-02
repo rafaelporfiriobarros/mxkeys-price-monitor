@@ -52,10 +52,21 @@ Este projeto coleta preços em diferentes sites, salva em um banco de dados Post
 [Como instalar Python em 2024 + Pyenv, PIP, VENV, PIPX e Poetry](https://www.youtube.com/watch?v=9LYqtLuD7z4&t=194s)
 
 - Depois de ter instalado o pyenv e baixado o python 3.11.5, entre na pasta do projeto "mxkeys-price-monitor" e ative a versão do python no terminal utilizando:
-    - pyenv local 3.11.5
+
+```bash
+pyenv local 3.11.5
 
 - Verifique no terminal a versão do python utilizando:
-    - "python3 --version" ou "python --version" dependendo do seu sistema operacional.
+
+```bash
+"python3 --version" 
+
+ou tente:
+
+```bash
+"python --version" 
+
+dependendo do seu sistema operacional.
 
 ## Ambiente virtual
 
