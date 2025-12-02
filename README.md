@@ -35,7 +35,7 @@ Este projeto coleta preços em diferentes sites, salva em um banco de dados Post
 
 - PostgreSQL 13+
 
-## Opcional
+## Instalação do Docker
 
 - Docker / Docker Compose
 
@@ -159,7 +159,7 @@ USER_AGENT=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, 
 
 # Instalação do Docker
 
-- Nesse projeto vamos utilizar o Docker, se você ainda nâo conhece o Docker, veja os links abaixo de como instalar, tanto para Windows, Linux e MacOS:
+- Nesse projeto vamos utilizar o Docker para rodar o Airflow e o banco de dados Postgres, se você ainda nâo conhece o Docker, veja os links abaixo de como instalar, tanto para Windows, Linux e MacOS:
 
  - Windows:
 
@@ -198,6 +198,28 @@ pip install -r requirements.txt
 - Instalação do Git e criação do projeto no Github.
 - Criação e ativação do Ambiente Virtual.
 - Instalação do Docker.
+
+# Iniciando o projeto
+
+- Após finalizar todas as intalaçôes, é preciso iniciar o container Docker. Para isso, acesse a pasta infra:
+
+```bash 
+cd infra
+```
+
+- Em seguida, digite o comando para iniciar a criação do container Docker:
+
+```bash
+docker compose up
+```
+
+- Se tudo ocorrer bem, entre no seu navegador para acessar o localhost onde está o Airflow:
+
+```
+http://localhost:8081/
+```
+
+
 
 
 
