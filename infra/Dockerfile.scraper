@@ -7,3 +7,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ../scraper /opt/scraper
 COPY ../.env /opt/scraper/.env
+
+COPY sites.json /opt/scraper/sites.json
+

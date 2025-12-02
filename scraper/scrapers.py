@@ -1,36 +1,58 @@
+import json
+import os
 import re
 import requests
 from urllib.parse import urlparse
 from .utils import fetch_url, polite_sleep
 from .parsers import parse_price_amazon, parse_price_generic
 from .config import USER_AGENT
+from pathlib import Path
 
-# -------------------------------------------------------
-# HEADERS
-# -------------------------------------------------------
 HEADERS = {
     "User-Agent": USER_AGENT,
     "Accept-Language": "pt-BR,pt;q=0.9",
 }
 
+# tenta caminhos em ordem: variável de ambiente, arquivo do pacote, cwd, /opt/airflow/dags, Airflow Variable (opcional)
+SITES_FILE_ENV = os.environ.get("MXKEYS_SITES_FILE")  # opcional: aponta p/ caminho absoluto
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DEFAULT_PATHS = [
+    "/opt/airflow/dags/sites.json",
+    "/opt/scraper/sites.json",
+    os.path.join(BASE_DIR, "sites.json"),
+]
 
-# -------------------------------------------------------
-# URLs monitoradas
-# Adicione quantas quiser
-# -------------------------------------------------------
-SITES = {
-    "amazon": "https://www.amazon.com.br/dp/B09LYZP1LG",
-    "mercadolivre": "https://encurtador.com.br/Wiwd",
-    "magalu": "https://www.magazineluiza.com.br/teclado-bluetooth-logitech-master-series-mx-keys-mini-qwerty/p/kkf0k96c15",
-    "kabum": "https://www.kabum.com.br/produto/366615/teclado-logitech-mx-keys-mini-cinza-padrao-us-920-010506",
-    "iplace":"https://shre.ink/qhmu",
-    "terabyte":"https://shre.ink/qhm3",
-    "pichau":"https://www.pichau.com.br/teclado-sem-fio-logitech-mx-keys-mini-iluminacao-smart-easy-switch-grafite-920-010505"
-}
+DEFAULT_PATHS = [p for p in DEFAULT_PATHS if p]
 
-# -------------------------------------------------------
-# Parsers adicionais (para sites que quebram)
-# -------------------------------------------------------
+def load_sites():
+    # 1) tenta carregar de arquivo em vários caminhos
+    for path in DEFAULT_PATHS:
+        try:
+            if Path(path).is_file():
+                with open(path, "r", encoding="utf-8") as f:
+                    print(f"→ Carregando sites de: {path}")
+                    return json.load(f)
+        except Exception as e:
+            print(f"→ Falha ao tentar abrir {path}: {e}")
+
+    # 2) fallback: tenta Airflow Variable (se estiver rodando no Airflow)
+    try:
+        from airflow.models import Variable
+        sites_json = Variable.get("mxkeys_sites", default_var=None)
+        if sites_json:
+            print("→ Carregando sites de Airflow Variable `mxkeys_sites`")
+            return json.loads(sites_json)
+    except Exception:
+        pass
+
+    # 3) última alternativa: raise com mensagem útil
+    raise FileNotFoundError(
+        "Nenhum sites.json encontrado. Verifique: "
+        "MXKEYS_SITES_FILE env, ./sites.json no package, /opt/airflow/dags/sites.json ou a Airflow Variable `mxkeys_sites`."
+    )
+
+
+SITES = load_sites()
 
 def parse_price_kabum(html):
     m = re.search(r'"price"\s*:\s*"?(\\?\d+[.,]\d+)"?', html)
@@ -66,13 +88,9 @@ def extract_mercadolivre_id(url: str):
     m = re.search(r"(MLB\d+)", url)
     return m.group(1) if m else None
 
-
-# -------------------------------------------------------
-# Scraper principal
-# -------------------------------------------------------
 def scrape_site(url: str, site_key: str):
     try:
-        print(f"\n🔎 Buscando preço de {site_key}")
+        print(f"Buscando preço de {site_key}")
 
         # MERCADO LIVRE — tenta API primeiro
         if site_key == "mercadolivre":
@@ -83,7 +101,7 @@ def scrape_site(url: str, site_key: str):
                     print(f"✔ Mercado Livre via API -> {price}")
                     return price
 
-            print("⚠ Falhou API - tentando HTML")
+            print("Falhou API - tentando HTML")
             html = fetch_url(url, HEADERS)
             return parse_price_generic(html)
 
@@ -92,7 +110,7 @@ def scrape_site(url: str, site_key: str):
             html = fetch_url(url, HEADERS)
             price = parse_price_amazon(html)
             if price is None:
-                print("⚠ AMAZON SEM PREÇO — salvando HTML para debug…")
+                print("AMAZON SEM PREÇO — salvando HTML para debug…")
                 with open("amazon_debug.html", "w", encoding="utf-8") as f:
                     f.write(html)
             return price
@@ -112,17 +130,14 @@ def scrape_site(url: str, site_key: str):
         return parse_price_generic(html)
 
     except Exception as e:
-        print(f"❌ ERRO no scraping de {site_key}: {e}")
+        print(f"ERRO no scraping de {site_key}: {e}")
         return None
 
 
-# -------------------------------------------------------
-# Scraper de todos os sites
-# -------------------------------------------------------
 def scrape_all_sites(sites=SITES):
     results = []
     for site_key, url in sites.items():
-        print(f"\n➡️ Coletando {site_key}: {url}")
+        print(f"Coletando {site_key}: {url}")
         price = scrape_site(url, site_key)
         results.append({"site": site_key, "url": url, "price": price})
         polite_sleep(2, 5)

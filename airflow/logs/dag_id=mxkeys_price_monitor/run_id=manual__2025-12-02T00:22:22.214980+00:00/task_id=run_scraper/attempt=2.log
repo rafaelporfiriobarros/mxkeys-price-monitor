@@ -1,0 +1,34 @@
+[2025-12-02T00:27:29.827+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-12-02T00:22:22.214980+00:00 [queued]>
+[2025-12-02T00:27:29.841+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-12-02T00:22:22.214980+00:00 [queued]>
+[2025-12-02T00:27:29.842+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 3
+[2025-12-02T00:27:29.864+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): run_scraper> on 2025-12-02 00:22:22.214980+00:00
+[2025-12-02T00:27:29.872+0000] {standard_task_runner.py:57} INFO - Started process 236 to run task
+[2025-12-02T00:27:29.876+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'mxkeys_price_monitor', 'run_scraper', 'manual__2025-12-02T00:22:22.214980+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/mxkeys_price_dag.py', '--cfg-path', '/tmp/tmpd3dz2ny6']
+[2025-12-02T00:27:29.879+0000] {standard_task_runner.py:85} INFO - Job 15: Subtask run_scraper
+[2025-12-02T00:27:29.961+0000] {task_command.py:415} INFO - Running <TaskInstance: mxkeys_price_monitor.run_scraper manual__2025-12-02T00:22:22.214980+00:00 [running]> on host 5ba81b27a023
+[2025-12-02T00:27:30.085+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='rafael' AIRFLOW_CTX_DAG_ID='mxkeys_price_monitor' AIRFLOW_CTX_TASK_ID='run_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-12-02T00:22:22.214980+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-02T00:22:22.214980+00:00'
+[2025-12-02T00:27:30.087+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-02T00:27:30.088+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cd /opt && python -m scraper.main']
+[2025-12-02T00:27:30.104+0000] {subprocess.py:86} INFO - Output:
+[2025-12-02T00:27:32.534+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-12-02T00:27:32.535+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[2025-12-02T00:27:32.535+0000] {subprocess.py:93} INFO -     return _run_code(code, main_globals, None,
+[2025-12-02T00:27:32.535+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.8/runpy.py", line 87, in _run_code
+[2025-12-02T00:27:32.536+0000] {subprocess.py:93} INFO -     exec(code, run_globals)
+[2025-12-02T00:27:32.536+0000] {subprocess.py:93} INFO -   File "/opt/scraper/main.py", line 7, in <module>
+[2025-12-02T00:27:32.536+0000] {subprocess.py:93} INFO -     from scraper.scrapers import scrape_all_sites
+[2025-12-02T00:27:32.536+0000] {subprocess.py:93} INFO -   File "/opt/scraper/scrapers.py", line 56, in <module>
+[2025-12-02T00:27:32.537+0000] {subprocess.py:93} INFO -     SITES = load_sites()
+[2025-12-02T00:27:32.537+0000] {subprocess.py:93} INFO -   File "/opt/scraper/scrapers.py", line 50, in load_sites
+[2025-12-02T00:27:32.538+0000] {subprocess.py:93} INFO -     raise FileNotFoundError(
+[2025-12-02T00:27:32.538+0000] {subprocess.py:93} INFO - FileNotFoundError: Nenhum sites.json encontrado. Verifique: MXKEYS_SITES_FILE env, ./sites.json no package, /opt/***/dags/sites.json ou a Airflow Variable `mxkeys_sites`.
+[2025-12-02T00:27:32.751+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-12-02T00:27:32.780+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-12-02T00:27:32.787+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=mxkeys_price_monitor, task_id=run_scraper, execution_date=20251202T002222, start_date=20251202T002729, end_date=20251202T002732
+[2025-12-02T00:27:32.813+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 15 for task run_scraper (Bash command failed. The command returned a non-zero exit code 1.; 236)
+[2025-12-02T00:27:32.858+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-12-02T00:27:32.914+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -21,5 +21,5 @@ with DAG(
 
     scraper_task = BashOperator(
         task_id="run_scraper",
-        bash_command="cd /opt && python -m scraper.main"
+        bash_command="export MXKEYS_SITES_FILE=/opt/airflow/dags/sites.json && cd /opt && python -m scraper.main"
     )
