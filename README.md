@@ -62,11 +62,13 @@ pyenv local 3.11.5
 
 ```bash
 python3 --version
+```
 
 ou tente:
 
 ```bash
-python --version 
+python --version
+```
 
 dependendo do seu sistema operacional.
 
