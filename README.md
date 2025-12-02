@@ -41,7 +41,23 @@ Este projeto coleta preços em diferentes sites, salva em um banco de dados Post
 
 - Apache Airflow
 
-# Como rodar o projeto 
+# Como rodar o projeto
+
+- Será necessário que você tenha o git instalado na sua máquina para criar o git e linkar com o github, se ainda nâo conhece o git e github, entre no  video da Jornada de Dados ensinando:
+
+[Como instalar Python em 2024 + Pyenv, PIP, VENV, PIPX e Poetry](https://www.youtube.com/watch?v=9LYqtLuD7z4&t=194s)
+
+- Para baixar o projeto, digite no terminal: 
+
+```bash
+mkdir mxkeys-price-monitor
+cd mxkeys-price-monitor
+```
+- em seguida: 
+
+```bash
+git clone https://github.com/rafaelporfiriobarros/mxkeys-price-monitor.git
+```
 
 ## Pyenv
 
@@ -89,16 +105,58 @@ python -m venv .venv
 ```
 
 - Será criada uma pasta .venv com as dependências necessárias para o ambiente virtual.
+
+![.venv](assets/.venv.png)
+
 - Em seguida, ative o ambiente. No Linux / macOS vocẽ utiliza:
+
 ```bash
 source .venv/bin/activate
 ```
 - No Windows vocẽ utiliza:
+
 ```bash
 venv\Scripts\activate
 ```
 
 ![Ambiente Virtual](assets/ambiente-virtual-ativo.png)
+
+
+## Configurando o arquivo .env
+
+- Depois de toda as instalações necessárias, você precisa criar na raiz do projeto o arquivo chamado ".env".
+
+- O arquivo .env (abreviação de environment) é um arquivo usado para armazenar variáveis de ambiente, normalmente informações sensíveis ou configurações que não devem ficar públicas no código — como:
+
+    - senhas
+
+    - tokens de API
+
+    - URLs de banco de dados
+
+    - chaves secretas
+
+    - configurações específicas de ambiente (dev, teste, produção)
+
+- O arquivo .env precisa ficar da seguinte forma:
+
+```python
+# Database
+DB_HOST=postgres
+DB_PORT=5432
+DB_NAME=precos
+DB_USER=airflow
+DB_PASSWORD=airflow
+
+# Telegram
+TG_BOT_TOKEN="SEU TOKEN"
+TG_CHAT_ID="SEU CHAT ID"
+
+# General
+PRICE_ALERT_THRESHOLD=700.00
+USER_AGENT=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+```
+
 
 
 
